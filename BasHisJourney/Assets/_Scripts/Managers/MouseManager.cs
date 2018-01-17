@@ -12,15 +12,13 @@ public class MouseManager : MonoBehaviour
 
     private Color startColor;
     private bool prefabAlive = false;
-    public static GameObject obj, prefab;
+    public GameObject obj, prefab;
 
     // Use this for initialization
     public void Awake()
     {
         MainCamera = Camera.main;
-        obj = GameObject.Find("Fake");
         prefab = Instantiate(Prefab, obj.transform.position, Quaternion.identity);
-
     }
 
     // Update is called once per frame
@@ -48,6 +46,9 @@ public class MouseManager : MonoBehaviour
         {
             prefab.transform.SetParent(obj.transform);
             prefab.transform.position = obj.transform.position;
+
+            prefab.transform.localScale = new Vector3(1, 1, 1);
+
         }
     }
 

@@ -5,6 +5,6 @@ using UnityEngine;
 
 public class ButtonManagerHandler : MonoBehaviour
 {
-    public float MoveSpeed = 10f;
-    public float RotationAngle = 45f;
+    public float MoveSpeed = 100f;
+    public float RotationAngle = 450f;
 }
