@@ -8,7 +8,7 @@ public class MovingBlocks : AreaManager
 
     void Update()
     {
-        transform.Translate(new Vector3(1,0,0) *Time.deltaTime * Dir * BlockSpeed);
+        transform.Translate(new Vector3(1,0,0) * Time.deltaTime * Dir * BlockSpeed);
     }
 
     new void OnTriggerEnter2D(Collider2D other)
@@ -18,17 +18,18 @@ public class MovingBlocks : AreaManager
             Debug.Log("reverse bra");
             Dir *= -1;
         }
-//        if (other.gameObject.name == "Player")
-//        {
-//            other.transform.parent = gameObject.transform;
-//        }
+        if (other.gameObject.name == "Player")
+        {
+            Debug.Log(other.transform.parent);
+            other.transform.SetParent(this.transform);
+        }
     }
 
     new void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
-            other.transform.parent = null;
+            other.transform.SetParent(null);
         }
     }
 }

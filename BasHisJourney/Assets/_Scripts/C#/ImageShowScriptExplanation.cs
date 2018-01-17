@@ -6,6 +6,10 @@ public class ImageShowScriptExplanation : CSharpPickup
 {
     public int Index;
 
+    void Start()
+    {
+    }
+
     void OnMouseOver()
     {
         RightScriptImage.sprite = HoverScriptImages[Index];

@@ -8,7 +8,7 @@ public class Walk : AbstractBehavior
     public float RunMultiplier = 2f;
     public bool Running;
 
-	void Update ()
+	void FixedUpdate ()
     {
         Running = false;
 

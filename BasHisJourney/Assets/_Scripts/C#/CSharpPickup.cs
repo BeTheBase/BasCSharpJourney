@@ -30,6 +30,7 @@ public class CSharpPickup : MonoBehaviour
         if (other.gameObject.name == "CSharp")
         {
             ScriptPanel.SetActive(true);
+            Debug.Log(ScriptPanel.activeSelf);
             ShowRightScript();
         }
     }

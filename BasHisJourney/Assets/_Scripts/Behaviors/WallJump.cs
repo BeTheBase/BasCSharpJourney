@@ -11,7 +11,7 @@ public class WallJump : AbstractBehavior
     private float timeElapsed = 0;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (collisionState.onWall && !collisionState.standing)
         {
