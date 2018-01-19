@@ -18,8 +18,6 @@ public class NextScene : MonoBehaviour
 
     public void GotoNextScene(int scene)
     {
-        PlayerPrefs.SetInt("Time", timeCounter.Time);
-
         SceneManager.LoadScene(scene);
     }
 }

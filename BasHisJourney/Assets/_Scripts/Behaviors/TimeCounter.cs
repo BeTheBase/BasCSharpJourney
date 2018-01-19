@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimeCounter : MonoBehaviour
@@ -8,18 +10,14 @@ public class TimeCounter : MonoBehaviour
     public int Time;
     public Text TIMER;
 
-    void Start()
+    void Awake()
     {
-        Time = PlayerPrefs.GetInt("Time");
-        Debug.Log(Time);
+        DontDestroyOnLoad(transform.gameObject);
     }
 
     void FixedUpdate()
     {
         Time++;
-
-
         TIMER.text = "TIME:" + Time;
     }
-
 }

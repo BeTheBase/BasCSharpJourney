@@ -42,6 +42,8 @@ public class WindowManager : MonoBehaviour
 
     void Start()
     {
+        var txt = GameObject.Find("TIMERcanvas");
+        Destroy(txt);
         GenericWindow.Manager = this;
         Open(DefaultWindowID);
     }

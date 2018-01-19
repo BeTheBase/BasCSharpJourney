@@ -1105,51 +1105,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1224160544 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1655328011616910, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
+--- !u!114 &1224160548 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114128533667434234, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
     type: 2}
   m_PrefabInternal: {fileID: 1637902609}
---- !u!114 &1224160545 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114886655621832448, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1637902609}
-  m_Script: {fileID: 11500000, guid: de5ede0c25805df42aa867bb003466b3, type: 3}
---- !u!114 &1224160546 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114103159042295850, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1637902609}
-  m_Script: {fileID: 11500000, guid: d108375b13c5dc44f918e4c89f8d3997, type: 3}
---- !u!114 &1224160548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1224160544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FbManager: {fileID: 1224160545}
-  BmHandler: {fileID: 1224160546}
-  MManager: {fileID: 1224160549}
---- !u!114 &1224160549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1224160544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f50dc155d576dae44996fe4139c8ffb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 704871372}
-  Obj: {fileID: 1522751867}
-  MainCamera: {fileID: 1885170040}
 --- !u!4 &1312241245 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4140429177961830, guid: b7f51e36b8919634294da2233242635b,
@@ -2037,6 +1998,16 @@ Prefab:
       propertyPath: CodersFeedback
       value: 
       objectReference: {fileID: 1344776115}
+    - target: {fileID: 114934143214122052, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
+        type: 2}
+      propertyPath: Prefab
+      value: 
+      objectReference: {fileID: 704871372}
+    - target: {fileID: 114934143214122052, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
+        type: 2}
+      propertyPath: Obj
+      value: 
+      objectReference: {fileID: 1522751867}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ed72d5a7388c6245bb1bed733d32fd3, type: 2}
   m_IsPrefabParent: 0
