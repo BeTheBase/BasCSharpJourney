@@ -21,7 +21,6 @@ public class MovingBlocks : AreaManager
         if (other.gameObject.name == "Player")
         {
             Debug.Log(other.transform.parent);
-            other.transform.SetParent(this.transform);
         }
     }
 
@@ -29,7 +28,6 @@ public class MovingBlocks : AreaManager
     {
         if (other.gameObject.name == "Player")
         {
-            other.transform.SetParent(null);
         }
     }
 }

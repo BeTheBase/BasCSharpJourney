@@ -34,7 +34,7 @@ public class ButtonManager : MonoBehaviour
         _codeMessage = "Transform.Rotate";
         _codersText.text = _codeMessage;
         MManager.SelectObject().transform.Rotate(Vector3.forward, _rotationAngle);
-        MManager.prefab.transform.localEulerAngles += new Vector3(0,0,-45);
+        MManager.Prefab.transform.localEulerAngles += new Vector3(0,0,-45);
         StartCoroutine(PutFalse());
     }
 

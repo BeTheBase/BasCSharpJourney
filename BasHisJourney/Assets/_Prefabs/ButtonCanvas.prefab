@@ -57,7 +57,6 @@ GameObject:
   - component: {fileID: 114956258523337078}
   - component: {fileID: 114600562548101090}
   - component: {fileID: 114689614882399476}
-  - component: {fileID: 114103227930957134}
   m_Layer: 8
   m_Name: ArrowLeft
   m_TagString: Untagged
@@ -93,7 +92,6 @@ GameObject:
   - component: {fileID: 222361198918370558}
   - component: {fileID: 114935731111606398}
   - component: {fileID: 114882395654506504}
-  - component: {fileID: 114039608618406482}
   - component: {fileID: 114893727487594796}
   m_Layer: 8
   m_Name: ArrowUp
@@ -148,7 +146,6 @@ GameObject:
   - component: {fileID: 222822500062559966}
   - component: {fileID: 114130866357398500}
   - component: {fileID: 114840791484990244}
-  - component: {fileID: 114209188395454702}
   - component: {fileID: 114341452317096206}
   m_Layer: 8
   m_Name: ArrowDown
@@ -168,7 +165,6 @@ GameObject:
   - component: {fileID: 222708137326754114}
   - component: {fileID: 114058098130147186}
   - component: {fileID: 114133908929248892}
-  - component: {fileID: 114921520410412816}
   - component: {fileID: 114575735744936906}
   m_Layer: 8
   m_Name: Rotation
@@ -189,7 +185,6 @@ GameObject:
   - component: {fileID: 114427309374498262}
   - component: {fileID: 114614435638592028}
   - component: {fileID: 114516140366671142}
-  - component: {fileID: 114899091428347286}
   m_Layer: 8
   m_Name: ArrowRight
   m_TagString: Untagged
@@ -214,19 +209,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114039608618406482
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1233870811962896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FbManager: {fileID: 0}
-  BmHandler: {fileID: 0}
 --- !u!114 &114058098130147186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -275,19 +257,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114103227930957134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1149956968629076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FbManager: {fileID: 0}
-  BmHandler: {fileID: 0}
 --- !u!114 &114130866357398500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -372,19 +341,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114209188395454702
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1641741697942062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FbManager: {fileID: 0}
-  BmHandler: {fileID: 0}
 --- !u!114 &114341452317096206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,7 +357,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114209188395454702}
+        - m_Target: {fileID: 0}
           m_MethodName: MoveDown
           m_Mode: 1
           m_Arguments:
@@ -458,7 +414,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114899091428347286}
+        - m_Target: {fileID: 0}
           m_MethodName: MoveRight
           m_Mode: 1
           m_Arguments:
@@ -521,7 +477,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114921520410412816}
+        - m_Target: {fileID: 0}
           m_MethodName: RotationHandler
           m_Mode: 1
           m_Arguments:
@@ -614,18 +570,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114427309374498262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114663390004567966
@@ -677,7 +622,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114103227930957134}
+        - m_Target: {fileID: 0}
           m_MethodName: MoveLeft
           m_Mode: 1
           m_Arguments:
@@ -822,7 +767,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114039608618406482}
+        - m_Target: {fileID: 0}
           m_MethodName: MoveUp
           m_Mode: 1
           m_Arguments:
@@ -836,32 +781,6 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
---- !u!114 &114899091428347286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1850447800907852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FbManager: {fileID: 0}
-  BmHandler: {fileID: 0}
---- !u!114 &114921520410412816
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1685340727807136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FbManager: {fileID: 0}
-  BmHandler: {fileID: 0}
 --- !u!114 &114935731111606398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1087,7 +1006,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641741697942062}
   m_LocalRotation: {x: 0, y: 0, z: -0.70090926, w: 0.7132505}
-  m_LocalPosition: {x: 0, y: -0.34, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.000001, y: 1.000001, z: 1}
   m_Children:
   - {fileID: 224822699721645712}
@@ -1106,7 +1025,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1282725641693260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224643237514308704}
@@ -1119,7 +1038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 500, y: 150}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224303180920568962
@@ -1165,7 +1084,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1149956968629076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224384080142381688}
@@ -1202,7 +1121,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1850447800907852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224035044313394186}
@@ -1221,7 +1140,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233870811962896}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.34, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224572381888263998}

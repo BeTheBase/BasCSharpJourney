@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     public int Scene;
+    TimeCounter timeCounter = new TimeCounter();
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -17,6 +18,8 @@ public class NextScene : MonoBehaviour
 
     public void GotoNextScene(int scene)
     {
+        PlayerPrefs.SetInt("Time", timeCounter.Time);
+
         SceneManager.LoadScene(scene);
     }
 }
