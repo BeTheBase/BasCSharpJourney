@@ -127,9 +127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 05000000
   dissableScripts: []
-  jumpSpeed: 200
-  jumpDelay: 0.1
-  jumpCount: 2
+  JumpSpeed: 200
+  JumpDelay: 0.1
+  JumpCount: 2
 --- !u!114 &114287798016946826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -144,7 +144,7 @@ MonoBehaviour:
   inputButtons: 
   dissableScripts: []
   onWallDetected: 0
-  slideVelocity: 5
+  slideVelocity: -50
 --- !u!114 &114336044479406230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,9 +193,9 @@ MonoBehaviour:
   inputButtons: 000000000100000004000000
   dissableScripts:
   - {fileID: 0}
-  speed: 50
-  runMultiplier: 2
-  running: 0
+  Speed: 100
+  RunMultiplier: 1.5
+  Running: 0
 --- !u!114 &114815936601099574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,9 +225,9 @@ MonoBehaviour:
   dissableScripts:
   - {fileID: 114815797663882762}
   - {fileID: 114287798016946826}
-  jumpVelocity: {x: 50, y: 200}
-  jumpingOffWall: 0
-  resetDelay: 0.2
+  JumpVelocity: {x: 50, y: 200}
+  JumpingOffWall: 0
+  ResetDelay: 0.2
 --- !u!212 &212949087167971604
 SpriteRenderer:
   m_ObjectHideFlags: 1
