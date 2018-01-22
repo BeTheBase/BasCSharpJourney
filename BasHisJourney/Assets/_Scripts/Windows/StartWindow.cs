@@ -37,7 +37,14 @@ public class StartWindow : GenericWindow
 
     public void Options()
     {
+        Manager.Open(1);
         Debug.Log("Options Pressed");
+    }
+
+    public void HighScore()
+    {
+        Manager.Open(2);
+        Debug.Log("HighScore Pressed");
     }
 
 

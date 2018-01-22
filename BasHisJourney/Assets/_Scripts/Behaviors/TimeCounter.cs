@@ -8,19 +8,18 @@ using UnityEngine.UI;
 public class TimeCounter : MonoBehaviour
 {
     public float Timer;
-    private int seconds;
+    public int Seconds;
     public Text TIMER;
 
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
-        
     }
 
     void Update()
     {
         Timer += Time.deltaTime;
-        seconds = (int) (Timer % 60);
-        TIMER.text = "TIME:" + seconds;
+        Seconds = (int) (Timer % 60);
+        TIMER.text = "TIME:" + Seconds;
     }
 }

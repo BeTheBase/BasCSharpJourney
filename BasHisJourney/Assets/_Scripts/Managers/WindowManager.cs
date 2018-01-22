@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WindowManager : MonoBehaviour
 {
-
+    public GameObject HighScore;
+    public Text HighScoreText;
     public GenericWindow[] Windows;
+
+    private TimeCounter timeCounter = new TimeCounter();
+    private int _bestTime = 0;
     public int CurrentWindowID;
     public int DefaultWindowID;
 
@@ -42,8 +47,30 @@ public class WindowManager : MonoBehaviour
 
     void Start()
     {
+        _bestTime = PlayerPrefs.GetInt("Time");
+        Debug.Log(timeCounter.Seconds);
+        if (timeCounter.Seconds > 0)
+        {
+            Debug.Log("1");
+            if (timeCounter.Seconds < _bestTime)
+            {
+                Debug.Log("2");
+
+                //New HighScore
+                _bestTime = timeCounter.Seconds;
+                PlayerPrefs.SetInt("Time", _bestTime);
+            }
+        }
+        else
+        {
+            _bestTime = 0;
+        }
+        Debug.Log("3");
+
+        HighScoreText.text = "NEW HIGHSCORE:" + _bestTime + "!";
+
         var txt = GameObject.Find("TIMERcanvas");
-        Destroy(txt);
+        //Destroy(txt);
         GenericWindow.Manager = this;
         Open(DefaultWindowID);
     }

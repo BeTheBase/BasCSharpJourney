@@ -33,7 +33,7 @@ public class GenericWindow : MonoBehaviour
     {
         Display(false);
     }
-    // Use this for initialization
+
     protected virtual void Awake()
     {
         Close();

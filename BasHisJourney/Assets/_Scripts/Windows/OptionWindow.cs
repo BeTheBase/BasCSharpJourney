@@ -2,8 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOverWindow : GenericWindow
+public class OptionWindow : GenericWindow
 {
+
+    public void Awake()
+    {
+
+    }
+
+    public override void Open()
+    {
+        base.Open();
+    }
+
     public override void Close()
     {
         base.Close();

@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738dbee2b20d5694c8733a513d79af6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: 0
+  Timer: 0
   TIMER: {fileID: 922565236}
 --- !u!1 &397245309
 GameObject:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdfaeb849d23604a801d6a204f3dd63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: 6
+  GoToMenuScene: 0
 --- !u!114 &1013454341
 MonoBehaviour:
   m_ObjectHideFlags: 0
