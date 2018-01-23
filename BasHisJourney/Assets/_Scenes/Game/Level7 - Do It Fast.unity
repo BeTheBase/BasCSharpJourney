@@ -615,32 +615,32 @@ Prefab:
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1224160548}
+      objectReference: {fileID: 0}
     - target: {fileID: 114689614882399476, guid: 941d13a8c8401044b967b0a713dcac87,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1224160548}
+      objectReference: {fileID: 0}
     - target: {fileID: 114893727487594796, guid: 941d13a8c8401044b967b0a713dcac87,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1224160548}
+      objectReference: {fileID: 0}
     - target: {fileID: 114341452317096206, guid: 941d13a8c8401044b967b0a713dcac87,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1224160548}
+      objectReference: {fileID: 0}
     - target: {fileID: 114575735744936906, guid: 941d13a8c8401044b967b0a713dcac87,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1224160548}
+      objectReference: {fileID: 0}
     - target: {fileID: 114633484589301352, guid: 941d13a8c8401044b967b0a713dcac87,
         type: 2}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1224160548}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 941d13a8c8401044b967b0a713dcac87, type: 2}
   m_IsPrefabParent: 0
@@ -1994,7 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdfaeb849d23604a801d6a204f3dd63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: 0
+  GoToMenuScene: 1
 --- !u!114 &1013454341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2558,12 +2558,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6f6fccfb15e42a4a89b1dd7c04c33eb, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1224160548 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114116568099203980, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1637902609}
-  m_Script: {fileID: 11500000, guid: 03070bdc0a8e7424fab7257b7e4bfdd5, type: 3}
 --- !u!1 &1254981022 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1316093234305302, guid: d6f6fccfb15e42a4a89b1dd7c04c33eb,

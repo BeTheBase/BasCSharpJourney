@@ -7,7 +7,6 @@ public class NextScene : MonoBehaviour
 {
     public bool GoToMenuScene = false;
     private int _scene;
-    TimeCounter timeCounter = new TimeCounter();
 
     void Awake()
     {

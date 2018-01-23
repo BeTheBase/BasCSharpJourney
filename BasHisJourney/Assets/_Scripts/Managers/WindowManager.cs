@@ -9,8 +9,8 @@ public class WindowManager : MonoBehaviour
     public Text HighScoreText;
     public GenericWindow[] Windows;
 
-    private TimeCounter timeCounter = new TimeCounter();
-    private int _bestTime = 0;
+    private TimeCounter timeCounter;
+    private int _bestTime;
     public int CurrentWindowID;
     public int DefaultWindowID;
 
@@ -47,15 +47,15 @@ public class WindowManager : MonoBehaviour
 
     void Start()
     {
-        _bestTime = PlayerPrefs.GetInt("Time");
-        Debug.Log(timeCounter.Seconds);
+        var txt = GameObject.Find("TIMERcanvas");
+        timeCounter = txt.GetComponent<TimeCounter>();
+
         if (timeCounter.Seconds > 0)
         {
-            Debug.Log("1");
+            _bestTime = PlayerPrefs.GetInt("Time");
+
             if (timeCounter.Seconds < _bestTime)
             {
-                Debug.Log("2");
-
                 //New HighScore
                 _bestTime = timeCounter.Seconds;
                 PlayerPrefs.SetInt("Time", _bestTime);
@@ -63,14 +63,11 @@ public class WindowManager : MonoBehaviour
         }
         else
         {
-            _bestTime = 0;
+            _bestTime = PlayerPrefs.GetInt("Time");
         }
-        Debug.Log("3");
 
         HighScoreText.text = "NEW HIGHSCORE:" + _bestTime + "!";
 
-        var txt = GameObject.Find("TIMERcanvas");
-        //Destroy(txt);
         GenericWindow.Manager = this;
         Open(DefaultWindowID);
     }

@@ -18,8 +18,17 @@ public class TimeCounter : MonoBehaviour
 
     void Update()
     {
-        Timer += Time.deltaTime;
-        Seconds = (int) (Timer % 60);
-        TIMER.text = "TIME:" + Seconds;
+        if (SceneManager.GetActiveScene().buildIndex > 0)
+        {
+            Debug.Log("1");
+            Timer += Time.deltaTime;
+            Seconds = (int) (Timer % 60);
+            TIMER.text = "TIME:" + Seconds;
+        }
+        else
+        {
+            Debug.Log("2");
+            Timer = 0;
+        }
     }
 }
