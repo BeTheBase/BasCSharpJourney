@@ -8,7 +8,7 @@ public class Walk : AbstractBehavior
     public float RunMultiplier = 2f;
     public bool Running;
 
-	void FixedUpdate ()
+    void FixedUpdate ()
     {
         Running = false;
 
@@ -18,6 +18,7 @@ public class Walk : AbstractBehavior
 
         if (right || left)
         {
+            //AManager.PlayPlayerSound("PlayerWalk");
             var tmpSpeed = Speed;
 
             if(run && RunMultiplier > 0)

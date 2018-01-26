@@ -66,7 +66,7 @@ public class WindowManager : MonoBehaviour
             _bestTime = PlayerPrefs.GetInt("Time");
         }
 
-        HighScoreText.text = "NEW HIGHSCORE:" + _bestTime + "!";
+        HighScoreText.text = "NEW HIGHSCORE: " + _bestTime + " !";
 
         GenericWindow.Manager = this;
         Open(DefaultWindowID);

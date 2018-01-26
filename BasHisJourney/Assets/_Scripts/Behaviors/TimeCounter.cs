@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class TimeCounter : MonoBehaviour
 {
+    public GameObject GameManager;
     public float Timer;
     public int Seconds;
     public Text TIMER;
@@ -14,6 +15,7 @@ public class TimeCounter : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+        DontDestroyOnLoad(GameManager.transform);
     }
 
     void Update()
@@ -22,13 +24,15 @@ public class TimeCounter : MonoBehaviour
         {
             Debug.Log("1");
             Timer += Time.deltaTime;
-            Seconds = (int) (Timer % 60);
+            Seconds = (int) (Timer);
             TIMER.text = "TIME:" + Seconds;
+            TIMER.CrossFadeAlpha(255, 1, false);
         }
         else
         {
             Debug.Log("2");
             Timer = 0;
+            TIMER.CrossFadeAlpha(0,0,false);
         }
     }
 }

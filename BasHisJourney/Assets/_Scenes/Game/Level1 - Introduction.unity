@@ -210,6 +210,36 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114943280310029458, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: ScriptPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114585921364501198, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: ScriptPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114434706407901930, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: ScriptPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114244046074090936, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: ScriptPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995670219031368, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: ScriptPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114560413332864484, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: ScriptPanel
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 869a4724223328745aaf1d8a180f7c1d, type: 2}
   m_IsPrefabParent: 0
@@ -781,6 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdfaeb849d23604a801d6a204f3dd63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RunHappyAnim: 0
   GoToMenuScene: 0
 --- !u!114 &1013454341
 MonoBehaviour:
@@ -1544,7 +1575,7 @@ Prefab:
     - target: {fileID: 114709950606483170, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
       propertyPath: m_FontData.m_FontSize
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114709950606483170, guid: 93a80ce575f24244885328f1763ab620,
         type: 2}
@@ -1966,6 +1997,11 @@ Prefab:
       propertyPath: CodersFeedback
       value: 
       objectReference: {fileID: 1344776115}
+    - target: {fileID: 114747482997933970, guid: 1ed72d5a7388c6245bb1bed733d32fd3,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ed72d5a7388c6245bb1bed733d32fd3, type: 2}
   m_IsPrefabParent: 0
@@ -2138,7 +2174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1847441935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2329,7 +2365,7 @@ Prefab:
     - target: {fileID: 114287798016946826, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114964231351518600, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
@@ -2352,6 +2388,11 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114107001129266820, guid: b7f51e36b8919634294da2233242635b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114336044479406230, guid: b7f51e36b8919634294da2233242635b,
         type: 2}
       propertyPath: m_Enabled
       value: 1

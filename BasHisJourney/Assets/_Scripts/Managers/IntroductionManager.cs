@@ -36,8 +36,6 @@ public class IntroductionManager : MonoBehaviour
     {
         FadeGameIn.CrossFadeAlpha(0f, 3f, true);
         StartCoroutine(SetInOrActive(FadeGameIn.gameObject, 3, false));
-        StartCoroutine(ShowText());
-
     }
 
     void Update()
@@ -69,18 +67,6 @@ public class IntroductionManager : MonoBehaviour
         }
     }
 
-    IEnumerator ShowText()
-    {
-        for (int i = 0; i < IntroText.Length; i++)
-        {
-            _fullText = IntroText[i];
-            for (int j = 0; j < _fullText.Length; j++)
-            {
-                IntroText[i] = _fullText.Substring(0, j);
-                yield return new WaitForSeconds(Delay);
-            }
-        }
-    }
 
     public void NextText()
     {

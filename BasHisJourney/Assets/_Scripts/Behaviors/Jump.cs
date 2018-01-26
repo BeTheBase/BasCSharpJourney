@@ -21,6 +21,7 @@ public class Jump : AbstractBehavior
         {
             if (canJump && holdTime < .1f)
             {
+                //AManager.PlayPlayerSound("PlayerJump");
                 jumpsRemaining = JumpCount - 1;
                 OnJump();
             }
@@ -38,7 +39,7 @@ public class Jump : AbstractBehavior
         }
 	}
 
-    protected virtual void OnJump()
+    public virtual void OnJump()
     {
         var vel = body2d.velocity;
         lastJumpTime = Time.time;

@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
+    public bool RunHappyAnim;
     public bool GoToMenuScene = false;
     private int _scene;
 
     void Awake()
     {
+        RunHappyAnim = false;
         _scene = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
@@ -26,6 +28,13 @@ public class NextScene : MonoBehaviour
         if (GoToMenuScene)
             scene = 0;
 
+        StartCoroutine(LoadSceneAfterTime(scene));
+    }
+
+    IEnumerator LoadSceneAfterTime(int scene)
+    {
+        RunHappyAnim = true;
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(scene);
     }
 }

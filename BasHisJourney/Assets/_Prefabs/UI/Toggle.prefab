@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: fec129bcb033f6e4684a43946c029fa4,
       type: 3}
     m_PressedSprite: {fileID: 21300000, guid: fec129bcb033f6e4684a43946c029fa4, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 89ec80b6519a00e40869df707d27288a, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: fec129bcb033f6e4684a43946c029fa4, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 114752558736797622}
-  toggleTransition: 0
+  toggleTransition: 1
   graphic: {fileID: 114858769058324846}
   m_Group: {fileID: 0}
   onValueChanged:
@@ -176,7 +176,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 89ec80b6519a00e40869df707d27288a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec129bcb033f6e4684a43946c029fa4, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -281,10 +281,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224776187734817618
 RectTransform:
@@ -301,6 +301,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.5, y: -0.5}
-  m_SizeDelta: {x: -23, y: -3}
+  m_AnchoredPosition: {x: 7.5, y: -0.5}
+  m_SizeDelta: {x: -25, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
