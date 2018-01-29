@@ -9,17 +9,18 @@ public class PlayerManager : MonoBehaviour
     private Animator animator;
     private CollisionState collisionState;
     private NextScene nextScene;
-    private Jump jumpScript;
+    private FinalAct finalAct;
+    private Jump jump;
 
     private void Awake()
     {
+        jump = GetComponent<Jump>();
+        finalAct = GetComponent<FinalAct>();
         nextScene = GetComponent<NextScene>();
         inputState = GetComponent<InputState>();
         walkBehavior = GetComponent<Walk>();
         animator = GetComponent<Animator>();
         collisionState = GetComponent<CollisionState>();
-        jumpScript = GetComponent<Jump>();
-
     }
 
     // Update is called once per frame
@@ -39,9 +40,19 @@ public class PlayerManager : MonoBehaviour
         }
         if (nextScene.RunHappyAnim)
         {
-            jumpScript.OnJump();
-
             ChangeAnimationState(2);
+            if (collisionState.standing)
+            {
+                jump.OnJump();
+            }
+        }
+        if (finalAct.RunClip)
+        {
+            ChangeAnimationState(2);
+            if (collisionState.standing)
+            {
+                jump.OnJump();
+            }
         }
 
         animator.speed = walkBehavior.Running ? walkBehavior.RunMultiplier : 1;

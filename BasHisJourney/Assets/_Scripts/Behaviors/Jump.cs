@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Jump : AbstractBehavior
 {
-
     public float JumpSpeed = 200f;
     public float JumpDelay = .1f;
     public int JumpCount = 2;

@@ -240,6 +240,96 @@ Prefab:
       propertyPath: ScriptPanel
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 65223416669272096, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 14.7276325
+      objectReference: {fileID: 0}
+    - target: {fileID: 65223416669272096, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.06490345
+      objectReference: {fileID: 0}
+    - target: {fileID: 65223416669272096, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -5.2065783
+      objectReference: {fileID: 0}
+    - target: {fileID: 65515614143859784, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 6.4622154
+      objectReference: {fileID: 0}
+    - target: {fileID: 65515614143859784, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.11121597
+      objectReference: {fileID: 0}
+    - target: {fileID: 65515614143859784, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 2.470811
+      objectReference: {fileID: 0}
+    - target: {fileID: 65411589726098352, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 20.320353
+      objectReference: {fileID: 0}
+    - target: {fileID: 65411589726098352, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.09337693
+      objectReference: {fileID: 0}
+    - target: {fileID: 65411589726098352, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -6.765004
+      objectReference: {fileID: 0}
+    - target: {fileID: 65557982672404264, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 14.921229
+      objectReference: {fileID: 0}
+    - target: {fileID: 65557982672404264, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.13176385
+      objectReference: {fileID: 0}
+    - target: {fileID: 65557982672404264, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 3.9297404
+      objectReference: {fileID: 0}
+    - target: {fileID: 65183189222025964, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 18.952099
+      objectReference: {fileID: 0}
+    - target: {fileID: 65183189222025964, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.2382677
+      objectReference: {fileID: 0}
+    - target: {fileID: 65183189222025964, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 5.561091
+      objectReference: {fileID: 0}
+    - target: {fileID: 65601094367951798, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 16.924393
+      objectReference: {fileID: 0}
+    - target: {fileID: 65601094367951798, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.14022504
+      objectReference: {fileID: 0}
+    - target: {fileID: 65601094367951798, guid: 869a4724223328745aaf1d8a180f7c1d,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 12.250409
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 869a4724223328745aaf1d8a180f7c1d, type: 2}
   m_IsPrefabParent: 0
@@ -1319,10 +1409,10 @@ MonoBehaviour:
   - {fileID: 988310234}
   FadeGameIn: {fileID: 1847441936}
   IntroductionText:
-  - Hey There!  Welcome To My Game
-  - 'My Name Is: Bas De Koningh'
-  - You play as me throughout my journey!
-  - On the way we learn allot of things!
+  - Hey! Welcome to my game!
+  - My name is Bas
+  - You play as me throughout this game!
+  - On the way we learn a lot of things!
   - Enjoy!
   MovementIntroText:
   - Hey! Look! Its a C#!
@@ -1330,7 +1420,7 @@ MonoBehaviour:
   - Press < > to walk and hold shift for running
   - Good job!
   - We have learned how to walk!
-  - Walk to the right and start my journey!
+  - Walk to the right and learn more C#!
   Delay: 0.1
   IntroText: []
 --- !u!114 &1485572205

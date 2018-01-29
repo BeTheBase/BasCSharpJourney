@@ -47,5 +47,10 @@ public class StartWindow : GenericWindow
         Debug.Log("HighScore Pressed");
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 
 }

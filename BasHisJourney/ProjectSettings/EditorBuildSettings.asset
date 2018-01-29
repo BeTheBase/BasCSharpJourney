@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Game/Level3 - Manipulation.unity
     guid: 67bba8953ee128b4b86bbe0e80c85321
   - enabled: 1
+    path: Assets/_Scenes/Game/Level3.5 - Manipulation Part 2.unity
+    guid: f36d31e0143ec3f43819f1e201746b1b
+  - enabled: 1
     path: Assets/_Scenes/Game/Level4 - WallJumping.unity
     guid: 177219b1284b4e6498e1a269f81b57ec
   - enabled: 1
@@ -35,3 +38,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/Game/Credits.unity
     guid: 24ee4e87b69e0d344af47d570f0318bf
+  - enabled: 1
+    path: Assets/_Scenes/Game/FinalAct.unity
+    guid: 243d36ae04149f244b9bc22751d8c10b

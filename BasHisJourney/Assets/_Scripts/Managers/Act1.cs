@@ -20,7 +20,7 @@ public class Act1 : MonoBehaviour
     public Text BasText;
     public Text DylanText;
 
-    private bool _dylanPlay, _basPlay;
+    public bool DylanPlay, BasPlay;
 
     void Awake()
     {
@@ -52,18 +52,19 @@ public class Act1 : MonoBehaviour
         StartCoroutine(NextLine(BasString, BasText, 7, 30, true));
         StartCoroutine(SetActiveOverTime(BasText.gameObject, 32, false));
 
-        StartCoroutine(SetBool(true, 24));
-        StartCoroutine(SetBool2(true, 30));
-
+        StartCoroutine(SetDylanPlay(true, 24));
+        StartCoroutine(SetBasPlay(true, 26));
+        StartCoroutine(SetActiveOverTime(BasText.gameObject, 30, false));
+        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 28, false));
         FadeGameIn.CrossFadeAlpha(0f, 3f, false);
     }
 
     void Update()
     {
-        if(_dylanPlay)
+        if(DylanPlay)
             Dylan.transform.Translate(1 * Time.deltaTime * Speed,0,0);
 
-        if(_basPlay)
+        if(BasPlay)
             Bas.transform.Translate(1 * Time.deltaTime * Speed, 0, 0);
 
         if (Dylan.transform.position.x > 500)
@@ -83,17 +84,15 @@ public class Act1 : MonoBehaviour
         obj.SetActive(active);
     }
 
-    IEnumerator SetBool(bool value, int time)
+    IEnumerator SetDylanPlay(bool value, int time)
     {
-        Debug.Log("SetBool");
         yield return new WaitForSeconds(time);
-        _dylanPlay = value;
+        DylanPlay = value;
     }
 
-    IEnumerator SetBool2(bool value, int time)
+    IEnumerator SetBasPlay(bool value, int time)
     {
-        Debug.Log("SetBool");
         yield return new WaitForSeconds(time);
-        _basPlay = value;
+        BasPlay = value;
     }
 }

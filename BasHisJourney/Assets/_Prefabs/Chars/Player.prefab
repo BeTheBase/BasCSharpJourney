@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 05000000
   dissableScripts: []
-  JumpSpeed: 200
+  JumpSpeed: 220
   JumpDelay: 0.1
   JumpCount: 2
 --- !u!114 &114287798016946826

@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 224401792069004042}
   - component: {fileID: 222796747642234084}
   - component: {fileID: 114924783650078612}
+  - component: {fileID: 114030366081172882}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -47,6 +48,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114030366081172882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854906863347300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.015686266, g: 0.19607843, b: 0.05490196, a: 1}
+  m_EffectDistance: {x: 0.3, y: -0.3}
+  m_UseGraphicAlpha: 0
 --- !u!114 &114524984243440378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9485294, g: 1, b: 0.953144, a: 1}
+  m_Color: {r: 0.37254906, g: 0.45098042, b: 0.39215687, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -147,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.37254906, g: 0.45098042, b: 0.39215687, a: 1}
+  m_Color: {r: 0.766, g: 0.228, b: 0.085, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
