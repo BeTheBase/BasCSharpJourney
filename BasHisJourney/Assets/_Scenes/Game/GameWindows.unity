@@ -1710,7 +1710,7 @@ Prefab:
     - target: {fileID: 114427599386481158, guid: 4bbae568bba3c264d95a36748dcb9cca,
         type: 2}
       propertyPath: m_Text
-      value: 'Credits: Bas De Koningh'
+      value: "\xA9Bas de Koningh 2018"
       objectReference: {fileID: 0}
     - target: {fileID: 114427599386481158, guid: 4bbae568bba3c264d95a36748dcb9cca,
         type: 2}
@@ -17333,11 +17333,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2093790045}
     m_Modifications:
-    - target: {fileID: 114346178269322390, guid: a924417cccda4354b85688f477947342,
-        type: 2}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 224480820278272556, guid: a924417cccda4354b85688f477947342,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -17428,39 +17423,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1335714176912758, guid: a924417cccda4354b85688f477947342, type: 2}
-      propertyPath: m_Name
-      value: TimerOn
-      objectReference: {fileID: 0}
-    - target: {fileID: 114066296315452004, guid: a924417cccda4354b85688f477947342,
-        type: 2}
-      propertyPath: m_Text
-      value: Timer
-      objectReference: {fileID: 0}
-    - target: {fileID: 114346178269322390, guid: a924417cccda4354b85688f477947342,
-        type: 2}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114346178269322390, guid: a924417cccda4354b85688f477947342,
-        type: 2}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114346178269322390, guid: a924417cccda4354b85688f477947342,
         type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 296280821}
-    - target: {fileID: 114346178269322390, guid: a924417cccda4354b85688f477947342,
-        type: 2}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 114346178269322390, guid: a924417cccda4354b85688f477947342,
-        type: 2}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 1335714176912758, guid: a924417cccda4354b85688f477947342, type: 2}
+      propertyPath: m_Name
+      value: TimerOn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a924417cccda4354b85688f477947342, type: 2}

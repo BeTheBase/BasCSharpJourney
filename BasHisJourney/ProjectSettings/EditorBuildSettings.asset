@@ -25,16 +25,19 @@ EditorBuildSettings:
     guid: f36d31e0143ec3f43819f1e201746b1b
   - enabled: 1
     path: Assets/_Scenes/Game/Level4 - WallJumping.unity
-    guid: 177219b1284b4e6498e1a269f81b57ec
+    guid: c36e9545dab1848498e440b01bb94519
   - enabled: 1
-    path: Assets/_Scenes/Game/Level5 - Triggerd.unity
-    guid: 6c521af06f97d244182d1c91e91c4dec
+    path: Assets/_Scenes/Game/Level5 - Boolean.unity
+    guid: 0b9852602e9af054dbd17538dc4e1f79
   - enabled: 1
-    path: Assets/_Scenes/Game/Level6 - The First Challenge.unity
-    guid: c9a2d8eb871834f47b5a1b10bdae443c
+    path: Assets/_Scenes/Game/Level6 - Triggerd.unity
+    guid: 1b3611b825c3e314c9370735f235edb9
   - enabled: 1
-    path: Assets/_Scenes/Game/Level7 - Do It Fast.unity
-    guid: 196e0532daaf84b47b2891a25693f5aa
+    path: Assets/_Scenes/Game/Level7 - The First Challenge.unity
+    guid: 28086cc74a3ab4d41903386d031c2bb2
+  - enabled: 1
+    path: Assets/_Scenes/Game/Level8 - Do It Fast.unity
+    guid: 47d4129e79bd5254689cda079ab4f7c5
   - enabled: 0
     path: Assets/_Scenes/Game/Credits.unity
     guid: 24ee4e87b69e0d344af47d570f0318bf
