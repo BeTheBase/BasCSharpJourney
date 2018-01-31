@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Switch : MonoBehaviour
 {
-    public Sprite SwitchedSprite;
+    public Sprite SwitchedSprite, CurrentSprite;
     public SpriteRenderer SpriteRenderer;
     public Transform LerpObject;
     public Text PressEObject;
@@ -23,6 +23,8 @@ public class Switch : MonoBehaviour
 
     void Start()
     {
+        CurrentSprite = SpriteRenderer.sprite;
+
         posUp = LerpObject.position + Vector3.up * Amount;
         posLeft = LerpObject.position + Vector3.left * Amount;
         posRight = LerpObject.position + Vector3.right * Amount;
@@ -31,14 +33,10 @@ public class Switch : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (e && Input.GetKeyDown(KeyCode.E))
+        if (!switchBool && e && Input.GetKeyDown(KeyCode.E))
         {
-            ChangeSprite();
+            ChangeSprite(true);
             switchBool = true;
-        }
-
-        if (switchBool)
-        {
             switch (dir)
             {
                 case Directions.Up:
@@ -57,19 +55,50 @@ public class Switch : MonoBehaviour
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        if (switchBool && e && Input.GetKeyDown(KeyCode.R))
+        {
+            ChangeSprite(false);
+            switchBool = false;
+            switch (dir)
+            {
+                case Directions.Up:
+                    LerpObject.position = Vector3.Lerp(LerpObject.position, posDown, LerpSpeed);
+                    break;
+                case Directions.Left:
+                    LerpObject.position = Vector3.Lerp(LerpObject.position, posRight, LerpSpeed);
+                    break;
+                case Directions.Right:
+                    LerpObject.position = Vector3.Lerp(LerpObject.position, posLeft, LerpSpeed);
+                    break;
+                case Directions.Down:
+                    LerpObject.position = Vector3.Lerp(LerpObject.position, posUp, LerpSpeed);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+
+        }
     }
 
-    void ChangeSprite()
+    void ChangeSprite(bool value)
     {
-        SpriteRenderer.sprite = SwitchedSprite;
+        SpriteRenderer.sprite = value ? SwitchedSprite : CurrentSprite;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
-            if(!e)
+            if (switchBool)
+            {
                 PressEObject.gameObject.SetActive(true);
+                PressEObject.text = "Press R";
+            }
+            else
+            {
+                PressEObject.text = "Press E";
+            }
             e = true; 
         }
     }

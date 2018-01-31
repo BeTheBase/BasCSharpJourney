@@ -15,6 +15,15 @@ public class NextScene : MonoBehaviour
         _scene = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
+    void Update()
+    {
+        if (gameObject.transform.position.y < -400 || gameObject.transform.position.x > 3000 ||
+            gameObject.transform.position.x < -2000)
+        {
+            SceneManager.LoadScene(_scene -1);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.name == "Door")

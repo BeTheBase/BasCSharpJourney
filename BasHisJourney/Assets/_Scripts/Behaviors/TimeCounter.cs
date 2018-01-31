@@ -20,7 +20,7 @@ public class TimeCounter : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex > 1 && SceneManager.GetActiveScene().buildIndex < 10)
+        if (SceneManager.GetActiveScene().buildIndex > 2 && SceneManager.GetActiveScene().buildIndex < 14)
         {
             Debug.Log("1");
             Timer += Time.deltaTime;
