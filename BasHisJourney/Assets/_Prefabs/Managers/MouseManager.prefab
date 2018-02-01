@@ -52,7 +52,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab: {fileID: 1282725641693260, guid: 941d13a8c8401044b967b0a713dcac87, type: 2}
-  MainCamera: {fileID: 0}
-  objectWeSelect: 0
-  Walls: []
-  Timer: 0
+  Obj: {fileID: 0}

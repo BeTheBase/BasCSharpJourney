@@ -4,25 +4,16 @@ using UnityEngine;
 
 public class ForcePush : AbstractBehavior
 {
-
-    public SpriteRenderer SpriteRenderer;
-    public Sprite NewSprite;
+    public Material LeftNewSprite;
+    public Material RightNewSprite;
     public float Speed;
     public GameObject ForceObjectRight, ForceObjectLeft;
-    public Transform BreakableObject;
+    public Transform CurrentShootPosition;
 
     private bool inRange;
-    private Vector3 currentPos;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {
-        currentPos = new Vector3(transform.position.x, transform.position.y, 2);
-
         var right = inputState.GetButtonValue(inputButtons[0]);
         var left = inputState.GetButtonValue(inputButtons[1]);
 
@@ -30,15 +21,11 @@ public class ForcePush : AbstractBehavior
         {
             if (right)
             {
-                Instantiate(ForceObjectRight, currentPos, Quaternion.identity);
-
-                Debug.Log("Right");
+                Instantiate(ForceObjectRight, CurrentShootPosition.position, Quaternion.identity);
             }
             if (left)
             {
-                Instantiate(ForceObjectLeft, currentPos, Quaternion.identity);
-
-                Debug.Log("Left");
+                Instantiate(ForceObjectLeft, CurrentShootPosition.position, Quaternion.identity);
             }
         }
     }

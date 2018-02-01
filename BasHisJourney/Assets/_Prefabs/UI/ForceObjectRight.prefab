@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 0
 --- !u!58 &58502555044620114
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -91,10 +91,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 
   dissableScripts: []
-  Speed: 6
+  LeftNewSprite: {fileID: 2100000, guid: cd97eae138d746b418f82a575bdd8935, type: 2}
+  RightNewSprite: {fileID: 2100000, guid: 364fcb2cfdca972488baf4636913dfc4, type: 2}
+  Speed: 200
   ForceObjectRight: {fileID: 0}
   ForceObjectLeft: {fileID: 0}
-  BreakableObject: {fileID: 0}
+  CurrentPosRight: {fileID: 0}
+  CurrentPosLeft: {fileID: 0}
 --- !u!212 &212197344375939708
 SpriteRenderer:
   m_ObjectHideFlags: 1

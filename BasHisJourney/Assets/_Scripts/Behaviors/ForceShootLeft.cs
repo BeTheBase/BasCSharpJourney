@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class ForceShootLeft : ForcePush
 {
-    public Sprite LeftBreakSprite;
     private float speed = 6f;
+    private Rigidbody2D thisRigid2D;
 
-    void Awake()
+    void Start()
     {
+        thisRigid2D = GetComponent<Rigidbody2D>();
         speed = Speed;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(-1 * speed, 0, 0);
+        thisRigid2D.AddForce(Vector3.left * speed);
         Destroy(transform.gameObject, 2f);
     }
 
@@ -23,10 +24,9 @@ public class ForceShootLeft : ForcePush
     {
         if (other.gameObject.name == "BreakObj")
         {
-            SpriteRenderer = other.gameObject.GetComponent<SpriteRenderer>();
-            SpriteRenderer.sprite = NewSprite;
-            Destroy(other.gameObject, 2f);
-            Destroy(transform.gameObject, 1f);
+            other.gameObject.GetComponent<MeshRenderer>().material = LeftNewSprite;
+            Destroy(other.gameObject,1f);
+            Destroy(transform.gameObject);
         }
     }
 }

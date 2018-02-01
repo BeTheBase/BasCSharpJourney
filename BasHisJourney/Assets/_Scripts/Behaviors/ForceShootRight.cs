@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForceShoot : ForcePush
+public class ForceShootRight : ForcePush
 {
     private float speed = 6f;
+    private Rigidbody2D thisRigid2D;
 
-    void Awake()
+    void Start()
     {
+        thisRigid2D = GetComponent<Rigidbody2D>();
         speed = Speed;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(1 * speed,0,0);
+        thisRigid2D.AddForce(Vector3.right * speed);
         Destroy(transform.gameObject, 2f);
     }
 
@@ -22,8 +24,9 @@ public class ForceShoot : ForcePush
     {
         if (other.gameObject.name == "BreakObj")
         {
-            Destroy(other.gameObject);
-            Destroy(transform.gameObject, 1f);
+            other.gameObject.GetComponent<MeshRenderer>().material = RightNewSprite;
+            Destroy(other.gameObject, 1f);
+            Destroy(transform.gameObject);
         }
     }
 }
