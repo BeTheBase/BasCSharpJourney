@@ -13,7 +13,6 @@ public class ForceShootLeft : ForcePush
         speed = Speed;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         thisRigid2D.AddForce(Vector3.left * speed);
@@ -24,7 +23,7 @@ public class ForceShootLeft : ForcePush
     {
         if (other.gameObject.name == "BreakObj")
         {
-            other.gameObject.GetComponent<MeshRenderer>().material = LeftNewSprite;
+            other.gameObject.GetComponent<MeshRenderer>().material = LeftNewMaterial;
             Destroy(other.gameObject,1f);
             Destroy(transform.gameObject);
         }

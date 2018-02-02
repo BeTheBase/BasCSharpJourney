@@ -91,13 +91,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 
   dissableScripts: []
-  LeftNewSprite: {fileID: 2100000, guid: cd97eae138d746b418f82a575bdd8935, type: 2}
-  RightNewSprite: {fileID: 2100000, guid: 364fcb2cfdca972488baf4636913dfc4, type: 2}
+  LeftNewMaterial: {fileID: 2100000, guid: cd97eae138d746b418f82a575bdd8935, type: 2}
+  RightNewMaterial: {fileID: 2100000, guid: 364fcb2cfdca972488baf4636913dfc4, type: 2}
   Speed: 200
   ForceObjectRight: {fileID: 0}
   ForceObjectLeft: {fileID: 0}
-  CurrentPosRight: {fileID: 0}
-  CurrentPosLeft: {fileID: 0}
+  CurrentShootPosition: {fileID: 0}
 --- !u!212 &212197344375939708
 SpriteRenderer:
   m_ObjectHideFlags: 1

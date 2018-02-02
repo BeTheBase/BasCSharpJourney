@@ -4971,8 +4971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputButtons: 0000000001000000
   dissableScripts: []
-  LeftNewSprite: {fileID: 2100000, guid: cd97eae138d746b418f82a575bdd8935, type: 2}
-  RightNewSprite: {fileID: 2100000, guid: 364fcb2cfdca972488baf4636913dfc4, type: 2}
+  LeftNewMaterial: {fileID: 0}
+  RightNewMaterial: {fileID: 0}
   Speed: 1000
   ForceObjectRight: {fileID: 1653522540293136, guid: 89da3f2b4446f744eb041853e0f95f70,
     type: 2}
@@ -6546,7 +6546,7 @@ Prefab:
     - target: {fileID: 224661511684089574, guid: 4b1317edd3a96b848a5dfab893028d80,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.68
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224661511684089574, guid: 4b1317edd3a96b848a5dfab893028d80,
         type: 2}

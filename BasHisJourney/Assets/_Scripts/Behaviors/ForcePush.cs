@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ForcePush : AbstractBehavior
 {
-    public Material LeftNewSprite;
-    public Material RightNewSprite;
+    public Material LeftNewMaterial;
+    public Material RightNewMaterial;
     public float Speed;
     public GameObject ForceObjectRight, ForceObjectLeft;
     public Transform CurrentShootPosition;

@@ -46,8 +46,6 @@ namespace UnityStandardAssets.Utility
 		    if (GetComponent<Camera>().orthographicSize < 300)
 		        camReady = true;
 
-		    if (camReady)
-		    {
 		        // Calculate the current rotation angles
 		        var wantedRotationAngle = target.eulerAngles.y;
 		        var wantedHeight = target.position.y + height;
@@ -75,7 +73,7 @@ namespace UnityStandardAssets.Utility
 
 		        // Always look at the target
 		        transform.LookAt(target);
-		    }
+		    
 		}
 	}
 }
