@@ -18,7 +18,7 @@ public class Switch : MonoBehaviour
     }
     public Directions dir;
 
-    private bool switchBool, e;
+    private bool switchBool, inRange;
     private Vector3 posUp, posLeft, posRight, posDown;
 
     void Start()
@@ -33,7 +33,7 @@ public class Switch : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!switchBool && e && Input.GetKeyDown(KeyCode.E))
+        if (!switchBool && inRange && Input.GetKeyDown(KeyCode.E))
         {
             ChangeSprite(true);
             switchBool = true;
@@ -55,8 +55,7 @@ public class Switch : MonoBehaviour
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-        if (switchBool && e && Input.GetKeyDown(KeyCode.R))
+        else if (switchBool && inRange && Input.GetKeyDown(KeyCode.R))
         {
             ChangeSprite(false);
             switchBool = false;
@@ -77,7 +76,6 @@ public class Switch : MonoBehaviour
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-
         }
     }
 
@@ -97,9 +95,10 @@ public class Switch : MonoBehaviour
             }
             else
             {
+                PressEObject.gameObject.SetActive(true);
                 PressEObject.text = "Press E";
             }
-            e = true; 
+            inRange = true; 
         }
     }
 

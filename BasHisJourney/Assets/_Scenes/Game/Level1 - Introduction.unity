@@ -1201,6 +1201,21 @@ Prefab:
       propertyPath: orthographic size
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 20976105703478424, guid: 4b1317edd3a96b848a5dfab893028d80,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.7794118
+      objectReference: {fileID: 0}
+    - target: {fileID: 20976105703478424, guid: 4b1317edd3a96b848a5dfab893028d80,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.93610555
+      objectReference: {fileID: 0}
+    - target: {fileID: 20976105703478424, guid: 4b1317edd3a96b848a5dfab893028d80,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b1317edd3a96b848a5dfab893028d80, type: 2}
   m_IsPrefabParent: 0
@@ -1426,7 +1441,7 @@ MonoBehaviour:
   - Enjoy!
   MovementIntroText:
   - Hey! Look! Its a C#!
-  - Try to walk in it!
+  - Try to walk into it!
   - Press < > to walk and hold shift for running
   - Good job!
   - We have learned how to walk!

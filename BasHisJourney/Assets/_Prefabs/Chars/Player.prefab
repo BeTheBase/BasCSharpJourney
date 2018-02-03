@@ -194,7 +194,7 @@ MonoBehaviour:
   dissableScripts:
   - {fileID: 0}
   Speed: 100
-  RunMultiplier: 1.5
+  RunMultiplier: 2
   Running: 0
 --- !u!114 &114815936601099574
 MonoBehaviour:

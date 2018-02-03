@@ -28,37 +28,24 @@ public class FinalAct : MonoBehaviour
     void Awake()
     {
         StartCoroutine(NextLine(BasString, BasText, 0, 2, true));
-        StartCoroutine(SetActiveOverTime(BasText.gameObject, 4, false));
         StartCoroutine(NextLine(DylanString, DylanText, 0, 4, true));
-        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 6, false));
-        StartCoroutine(SetActiveOverTime(UnityIcon, 6, true));
-        StartCoroutine(NextLine(BasString, BasText, 1, 6, true));
-        StartCoroutine(NextLine(BasString, BasText, 2, 8, true));
-        StartCoroutine(SetActiveOverTime(BasText.gameObject, 10, false));
-        StartCoroutine(NextLine(DylanString, DylanText, 1, 10, true));
+        StartCoroutine(SetActiveOverTime(BasText.gameObject, 4, false));
+        StartCoroutine(NextLine(DylanString, DylanText, 1, 6, true));
+        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 8, false));
+        StartCoroutine(NextLine(BasString, BasText, 1, 8, true));
+        StartCoroutine(NextLine(BasString, BasText, 2, 10, true));
+        StartCoroutine(SetActiveOverTime(BasText.gameObject, 12, false));
         StartCoroutine(NextLine(DylanString, DylanText, 2, 12, true));
-        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 14, false));
-        StartCoroutine(NextLine(BasString, BasText, 3, 14, true));
-        StartCoroutine(NextLine(BasString, BasText, 4, 16, true));
+        StartCoroutine(NextLine(DylanString, DylanText, 3, 14, true));
+        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 16, false));
+        StartCoroutine(NextLine(BasString, BasText, 3, 16, true));
         StartCoroutine(SetActiveOverTime(BasText.gameObject, 18, false));
-        StartCoroutine(NextLine(DylanString, DylanText, 3, 18, true));
-        StartCoroutine(NextLine(DylanString, DylanText, 4, 20, true));
-        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 22, false));
-        StartCoroutine(NextLine(BasString, BasText, 5, 22, true));
-        StartCoroutine(SetActiveOverTime(BasText.gameObject, 24, false));
-        StartCoroutine(NextLine(DylanString, DylanText, 5, 24, true));
-        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 26, false));
-        StartCoroutine(NextLine(BasString, BasText, 6, 26, true));
-        StartCoroutine(SetActiveOverTime(BasText.gameObject, 28, false));
-        StartCoroutine(NextLine(DylanString, DylanText, 6, 28, true));
-        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 30, false));
-        StartCoroutine(NextLine(BasString, BasText, 7, 30, true));
-        StartCoroutine(SetActiveOverTime(BasText.gameObject, 32, false));
+        StartCoroutine(NextLine(DylanString, DylanText, 4, 18, true));
 
-        StartCoroutine(SetDylanPlay(true, 24));
-        StartCoroutine(SetBasPlay(true, 26));
-        StartCoroutine(SetActiveOverTime(BasText.gameObject, 30, false));
-        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 28, false));
+        StartCoroutine(SetDylanPlay(true, 20));
+        StartCoroutine(SetBasPlay(true, 22));
+        StartCoroutine(SetActiveOverTime(BasText.gameObject, 18, false));
+        StartCoroutine(SetActiveOverTime(DylanText.gameObject, 20, false));
         FadeGameIn.CrossFadeAlpha(0f, 3f, false);
     }
 
